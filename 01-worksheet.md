@@ -63,11 +63,11 @@ Hãy sử dụng **4 Lenses** dưới đây để quét qua hoạt động vận
 ### 📝 List bài toán của tôi:
 | # | Subsidiary (VinFast/Xanh SM...) | Lens | Mô tả ngắn bài toán |
 |---|----------------------------------|------|---------------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 | Xanh SM (GSM) | 🔴 Pain từ người khác (Stakeholder Pain) | Dispatcher thủ công gọi điện/nhắn tin xử lý lịch sạc khẩn cấp khi pin xe < 20%, mất 8–12 phút/ca/xe. Với đội 5,000+ xe, ước tính ~600 giờ nhân công/ngày bị lãng phí. |
+| 2 | Xanh SM (GSM) | ⏱️ Tốn thời gian (Time-consuming) | Nhân viên CSKH soạn thủ công phản hồi review 1-sao trên app/Google Maps, mất ~15 phút/phản hồi. Với ~200 review tiêu cực/ngày, tốn 50 giờ nhân công, tỷ lệ phản hồi chỉ đạt ~30%. |
+| 3 | Vinhomes | 🔁 Lặp lại (Repetitive) | Nhân viên tổng đài phân loại thủ công ~500 ticket bảo trì/ngày từ app cư dân (điện, nước, thang máy...). Sai tuyến ~18%, gây xử lý lại mất thêm 2–3 ngày/ticket. |
+| 4 | Vinmec | 🤖 AI có thể tốt hơn (AI-upgrade) | Bác sĩ mất 10–15 phút đọc lại hồ sơ bệnh án dài của bệnh nhân tái khám. AI tóm tắt tự động có thể tiết kiệm ~25% thời gian khám, tương đương thêm 2–3 bệnh nhân/ngày/bác sĩ. |
+| 5 | VinFast | 🔴 Pain từ người khác (Stakeholder Pain) | Kỹ thuật viên ghi tay phiếu lỗi xe, nhân viên back-office nhập lại hệ thống ~20 phút/phiếu. Với 300+ phiếu/ngày, phát sinh 100 giờ nhập liệu, tỷ lệ sai ~12%, trì hoãn bảo hành. |
 
 ---
 
@@ -77,24 +77,94 @@ Chọn **top 3 bài toán** từ danh sách trên và hoàn thiện **3 Quick Pr
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ QUICK PROBLEM CARD #___                                     │
+│ QUICK PROBLEM CARD #2                                       │
 │                                                             │
-│ Bài toán (1 câu): ________________________________________  │
-│ Công ty thành viên: [ ] VinFast  [ ] Xanh SM  [ ] Vinhomes  │
-│                     [ ] Vinmec   [ ] Khác (Ghi rõ)________  │
+│ Bài toán (1 câu): Nhân viên CSKH Xanh SM phải soạn thủ     │
+│ công từng phản hồi cho review 1-sao trên app/Google Maps,  │
+│ gây chậm trễ và tỷ lệ phản hồi thấp (~30%).                │
+│ Công ty thành viên: [ ] VinFast  [x] Xanh SM  [ ] Vinhomes │
+│                     [ ] Vinmec   [ ] Khác                   │
 │                                                             │
-│ Ai đang đau (Actor)? ______________________________________ │
+│ Ai đang đau (Actor)? Nhân viên CSKH Xanh SM (GSM)          │
 │                                                             │
 │ Workflow thủ công hiện tại (3-5 bước):                      │
-│   1. ___ ──> 2. ___ ──> 3. ___ ──> 4. ___                   │
+│   1. Nhận notification review 1-sao                         │
+│   ──> 2. Đọc nội dung review & tra cứu thông tin chuyến    │
+│   ──> 3. Soạn phản hồi cá nhân hóa thủ công (~15 phút)    │
+│   ──> 4. Supervisor review & gửi phản hồi                  │
 │                                                             │
-│ Bước nào tốn thời gian/lỗi nhất? ___ (⏱ ___ phút/lượt)      │
-│ AI có thể nhảy vào hỗ trợ ở bước nào? _____________________ │
+│ Bước nào tốn thời gian/lỗi nhất? Bước 2–3 (⏱ 15 phút/lượt)│
+│ AI có thể nhảy vào hỗ trợ ở bước nào?                      │
+│   Bước 2–3: AI tự tra cứu thông tin chuyến xe + generate   │
+│   draft phản hồi cá nhân hóa, nhân viên chỉ review & gửi  │
 │                                                             │
-│ Đo thành công bằng gì (Metric có số)? ______________________ │
-│   VD: "Giảm thời gian soạn phản hồi từ 10 min ──> under 2 min"│
+│ Đo thành công bằng gì (Metric có số)?                       │
+│   "Giảm thời gian soạn từ 15 phút ──> dưới 2 phút/phản hồi │
+│    Tỷ lệ phản hồi từ 30% ──> trên 85% trong vòng 30 ngày" │
 │                                                             │
-│ Quick Architecture: [ ] No AI  [ ] Rule  [ ] LLM  [ ] Agent │
+│ Quick Architecture: [ ] No AI  [ ] Rule  [x] LLM  [ ] Agent│
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ QUICK PROBLEM CARD #4                                       │
+│                                                             │
+│ Bài toán (1 câu): Bác sĩ Vinmec mất 10–15 phút đọc lại hồ │
+│ sơ bệnh án dài của bệnh nhân tái khám, chiếm 25% thời gian │
+│ khám và làm giảm số lượng bệnh nhân được phục vụ/ngày.     │
+│ Công ty thành viên: [ ] VinFast  [ ] Xanh SM  [ ] Vinhomes │
+│                     [x] Vinmec   [ ] Khác                   │
+│                                                             │
+│ Ai đang đau (Actor)? Bác sĩ chuyên khoa Vinmec             │
+│                                                             │
+│ Workflow thủ công hiện tại (3-5 bước):                      │
+│   1. Bệnh nhân tái khám đặt lịch & đến phòng khám          │
+│   ──> 2. Lễ tân gọi hồ sơ bệnh án từ hệ thống HIS         │
+│   ──> 3. Bác sĩ mở hồ sơ & đọc lại toàn bộ lịch sử        │
+│          (~10–15 phút/bệnh nhân)                            │
+│   ──> 4. Bác sĩ bắt đầu hỏi khám và chẩn đoán             │
+│                                                             │
+│ Bước nào tốn thời gian/lỗi nhất? Bước 3 (⏱ 12 phút/lượt)  │
+│ AI có thể nhảy vào hỗ trợ ở bước nào?                      │
+│   Bước 2–3: AI tự động tóm tắt hồ sơ thành 1 trang         │
+│   highlight (chẩn đoán gần nhất, thuốc đang dùng, dị ứng,  │
+│   kết quả xét nghiệm quan trọng) trước khi bác sĩ vào khám │
+│                                                             │
+│ Đo thành công bằng gì (Metric có số)?                       │
+│   "Giảm thời gian đọc hồ sơ từ 12 phút ──> dưới 2 phút    │
+│    Tăng thêm 2–3 bệnh nhân/bác sĩ/ngày (~15% throughput)"  │
+│                                                             │
+│ Quick Architecture: [ ] No AI  [ ] Rule  [x] LLM  [ ] Agent│
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ QUICK PROBLEM CARD #5                                       │
+│                                                             │
+│ Bài toán (1 câu): Kỹ thuật viên VinFast ghi tay phiếu lỗi  │
+│ xe, nhân viên back-office nhập lại thủ công vào hệ thống   │
+│ (~20 phút/phiếu, sai 12%), gây chậm trễ phê duyệt bảo hành.│
+│ Công ty thành viên: [x] VinFast  [ ] Xanh SM  [ ] Vinhomes │
+│                     [ ] Vinmec   [ ] Khác                   │
+│                                                             │
+│ Ai đang đau (Actor)?                                        │
+│   Kỹ thuật viên bảo hành + Nhân viên back-office VinFast   │
+│                                                             │
+│ Workflow thủ công hiện tại (3-5 bước):                      │
+│   1. KTV kiểm tra xe & ghi tay phiếu lỗi (mã lỗi, mô tả)  │
+│   ──> 2. Chuyển phiếu giấy về văn phòng cuối ngày          │
+│   ──> 3. Nhân viên nhập liệu vào hệ thống ERP (~20 phút)  │
+│   ──> 4. Supervisor phê duyệt lệnh bảo hành                │
+│   ──> 5. Gửi linh kiện & thực hiện sửa chữa                │
+│                                                             │
+│ Bước nào tốn thời gian/lỗi nhất? Bước 3 (⏱ 20 phút/phiếu) │
+│ AI có thể nhảy vào hỗ trợ ở bước nào?                      │
+│   Bước 1–3: KTV chụp ảnh phiếu → AI OCR + extract thông   │
+│   tin cấu trúc (mã lỗi, số khung, mô tả) → tự điền ERP    │
+│                                                             │
+│ Đo thành công bằng gì (Metric có số)?                       │
+│   "Giảm thời gian nhập liệu từ 20 phút ──> dưới 2 phút    │
+│    Giảm tỷ lệ sai từ 12% ──> dưới 2% trong vòng 60 ngày"  │
+│                                                             │
+│ Quick Architecture: [ ] No AI  [ ] Rule  [x] LLM  [ ] Agent│
 └─────────────────────────────────────────────────────────────┘
 ```
 
