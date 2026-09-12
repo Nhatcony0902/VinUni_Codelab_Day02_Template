@@ -1,3 +1,8 @@
+# Tên nhóm: B2
+# Họ và tên: Chu Thuỳ Dương
+
+---
+
 # 03 — AI Interaction Log & Reflection (Nhật Ký Tương Tác AI)
 **Học viên:** Chu Thùy Dương  
 **Đơn vị:** Vin Smart Future (Vingroup)  

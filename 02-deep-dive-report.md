@@ -1,3 +1,8 @@
+# Tên nhóm: B2
+# Họ và tên: Chu Thuỳ Dương
+
+---
+
 # 02 — Deep-Dive Report: AI Product Scoping
 **Dự án:** Co-pilot Điều Phối Sự Cố Pin Khẩn Cấp & Trạm Sạc Thông Minh (Xanh SM Smart Dispatcher Co-pilot)  
 **Đơn vị phát triển:** Vin Smart Future (Vingroup)  

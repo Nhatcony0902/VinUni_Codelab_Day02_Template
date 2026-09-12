@@ -1,3 +1,8 @@
+# Tên nhóm: B2
+# Họ và tên: Chu Thuỳ Dương
+
+---
+
 # 01 — Problem Scan & Quick Problem Cards
 **Đơn vị:** Vin Smart Future (Vingroup)  
 **Dự án:** AI Product Scoping & Operational Boundary Prototyping  

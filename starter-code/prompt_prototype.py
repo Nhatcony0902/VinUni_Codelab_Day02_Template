@@ -1,4 +1,6 @@
 """
+Tên nhóm: B2
+Họ và tên: Chu Thuỳ Dương
 Day 2 — AI Product Scoping (Vin Smart Future)
 Lightweight Prompt Boundary Prototyping (Starter Code)
 
