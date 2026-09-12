@@ -1,3 +1,8 @@
+Tên nhóm: B2
+Họ và tên: Trần Đình Hinh
+Mã sv: 2A202602399
+#Email: 26ai.hinhtd@vinui.edu.vn
+
 # Lab 02 - Problem Scan
 
 ## Phase 1 - SCAN
@@ -149,3 +154,72 @@ LLM Feature.
 ### Human Oversight
 
 CSKH review category và department trước khi ticket được route.
+
+## Quick Problem Card #3
+
+### Problem
+
+Bác sĩ mất nhiều thời gian tạo bản tóm tắt hồ sơ xuất viện
+từ nhiều thông tin trong bệnh án.
+
+### Company
+
+Vinmec
+
+### Actor
+
+Doctor / Medical staff
+
+### Current Workflow
+
+1. Bác sĩ đọc hồ sơ.
+2. Tìm các thông tin quan trọng.
+3. Tổng hợp diễn biến.
+4. Viết bản tóm tắt.
+5. Kiểm tra lại nội dung.
+
+### Bottleneck
+
+Tổng hợp và viết bản tóm tắt thủ công.
+
+Estimated processing time:
+
+20-30 phút/bệnh nhân.
+
+### AI Opportunity
+
+LLM tạo bản nháp discharge summary từ các dữ liệu đã được
+cung cấp.
+
+### Success Metric
+
+Giảm thời gian tạo bản nháp từ khoảng 20-30 phút xuống dưới 5 phút.
+
+### Quick Architecture
+
+LLM Feature + Human-in-the-loop.
+
+### Human Oversight
+
+Bác sĩ phải kiểm tra và phê duyệt trước khi bản tóm tắt được sử dụng.
+AI không được đưa ra chẩn đoán hoặc quyết định điều trị.
+
+Mình chọn problem card 1
+Có workflow rõ
+      ↓
+Có bottleneck
+      ↓
+Có metric
+      ↓
+Có LLM
+      ↓
+Có Rule
+      ↓
+Có HITL
+      ↓
+Có Fallback
+      ↓
+Có thể code prototype
+
+
+
