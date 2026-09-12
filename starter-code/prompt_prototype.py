@@ -1,6 +1,10 @@
 """
 Day 2 — AI Product Scoping (Vin Smart Future)
-Lightweight Prompt Boundary Prototyping (Starter Code)
+Lightweight Prompt Boundary Prototyping
+
+Tên nhóm: B2
+Họ và tên: Dương Hữu Đạt
+Email: duongdat6672@gmail.com
 
 Instructions:
     1. Define your strict SYSTEM_PROMPT below, detailing the operational boundaries.

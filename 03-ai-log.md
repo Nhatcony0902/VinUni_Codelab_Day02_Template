@@ -1,6 +1,8 @@
 # 03 — AI Log & Reflection (Nhật Ký Tương Tác và Phản Tư Kỹ Thuật AI)
 
-**Học viên / Kỹ sư:** Dương Hữu Đạt  
+**Tên nhóm:** B2  
+**Họ và tên:** Dương Hữu Đạt  
+**Email:** duongdat6672@gmail.com  
 **Dự án:** Xanh SM Intelligent Battery Dispatcher (Vin Smart Future)  
 **Mô hình sử dụng làm Thought-Partner:** Google Gemini 2.5 Flash, Claude 3.7 Sonnet, ChatGPT  
 

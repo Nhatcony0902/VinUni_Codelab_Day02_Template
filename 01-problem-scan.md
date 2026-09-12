@@ -1,6 +1,8 @@
 # 01 — Problem Scan & Quick Problem Cards (Vin Smart Future)
 
-**Kỹ sư thực hiện:** Dương Hữu Đạt  
+**Tên nhóm:** B2  
+**Họ và tên:** Dương Hữu Đạt  
+**Email:** duongdat6672@gmail.com  
 **Đơn vị:** Vin Smart Future (Phối hợp cùng Khối Vận Hành Xanh SM - GSM)  
 **Chi nhánh / Mảng:** Vận tải hành khách & Đội xe điện thông minh (EV Fleet Operations)  
 

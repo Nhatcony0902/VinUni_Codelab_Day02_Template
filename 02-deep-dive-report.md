@@ -1,9 +1,11 @@
 # 02 — Báo Cáo Phân Tích Sâu (Deep-Dive Report): Xanh SM Intelligent Battery Dispatcher
 
+**Tên nhóm:** B2  
+**Họ và tên:** Dương Hữu Đạt  
+**Email:** duongdat6672@gmail.com  
 **Dự án:** Trợ lý Điều phối Sự cố Pin & Điều vận Xe Cứu hộ Thông minh  
 **Đơn vị phát triển:** Vin Smart Future (Vingroup)  
 **Đơn vị thụ hưởng:** Khối Vận Hành Xanh SM (GSM) & Hệ sinh thái Trạm sạc VinFast  
-**Kỹ sư phụ trách:** Dương Hữu Đạt  
 
 ---
 
