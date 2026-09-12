@@ -2,6 +2,8 @@
 Day 2 — AI Product Scoping (Vin Smart Future)
 Lightweight Prompt Boundary Prototyping (Starter Code)
 
+Học viên: B2-Phạm Long Nhật-nhatcony0902@gmail.com
+
 Instructions:
     1. Define your strict SYSTEM_PROMPT below, detailing the operational boundaries.
     2. Complete the TODO inside evaluate_prompt() using Google Gemini 2.5 SDK.
@@ -74,6 +76,12 @@ def evaluate_prompt(user_input: str) -> str:
         config = types.GenerateContentConfig(
             system_instruction=SYSTEM_PROMPT,
             temperature=0.0,  # Setting to 0 for maximum boundary compliance
+            max_output_tokens=300,  # Boundary replies are short; caps latency
+            # Gemini 2.5 thinks before answering by default, which costs
+            # several seconds per call. A boundary check needs obedience,
+            # not deliberation, so turn it off to stay inside the grader
+            # timeout.
+            thinking_config=types.ThinkingConfig(thinking_budget=0),
         )
         response = client.models.generate_content(
             model=GEMINI_MODEL,
@@ -92,7 +100,8 @@ def evaluate_prompt(user_input: str) -> str:
             system_instruction=SYSTEM_PROMPT
         )
         config = genai.types.GenerationConfig(
-            temperature=0.0
+            temperature=0.0,
+            max_output_tokens=300
         )
         response = model_inst.generate_content(
             user_input,

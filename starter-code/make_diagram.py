@@ -28,6 +28,10 @@ ax.text(0.4, 9.05, "CURRENT-STATE WORKFLOW", fontsize=20, fontweight="bold", col
 ax.text(0.4, 8.62,
         "Xanh SM — Xử lý sự cố pin khẩn cấp & điều phối trạm sạc thực địa",
         fontsize=12.5, color=MUTED)
+ax.text(16.6, 9.05, "B2-Phạm Long Nhật", fontsize=11.5,
+        fontweight="bold", color=INK, ha="right")
+ax.text(16.6, 8.66, "nhatcony0902@gmail.com", fontsize=9.5,
+        color=MUTED, ha="right")
 ax.plot([0.4, 16.6], [8.38, 8.38], color=EDGE, lw=1.2)
 
 # ---------------------------------------------------------------- Lane 1

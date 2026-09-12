@@ -2,6 +2,7 @@
 
 **Bài toán trọng tâm:** Xử lý sự cố pin khẩn cấp & điều phối trạm sạc thực địa — Xanh SM (GSM)
 **Nhóm:** Vin Smart Future — AI Product Engineering
+**Học viên:** B2-Phạm Long Nhật-nhatcony0902@gmail.com
 **Phase:** 3 (DEEP-DIVE) + 5 (EVALUATE)
 
 > **Ghi chú về số liệu:** các con số thời gian và quy mô trong báo cáo này là **ước lượng của nhóm**, dựng từ việc đi ngược quy trình và đối chiếu mô tả nghiệp vụ công khai. Chúng chưa được đo từ log điều vận thật. Chúng tôi giữ nguyên cách ghi này thay vì làm tròn thành con số nghe chắc chắn, vì toàn bộ quyết định ở Phase 5 phụ thuộc vào việc các số này đúng hay sai.

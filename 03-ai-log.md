@@ -1,6 +1,6 @@
 # 03 — AI Log & Reflection
 
-**Học viên:** Phạm Long Nhất
+**Học viên:** B2-Phạm Long Nhật-nhatcony0902@gmail.com
 **Trợ lý AI đã dùng:** Claude (Claude Code, chạy trong terminal) cho phần code và soạn tài liệu; Gemini 2.5 Flash là đối tượng bị kiểm thử ở phần prototype
 **Phase:** 6 (REFLECTION)
 
@@ -35,7 +35,7 @@ Buổi lab này tôi dùng AI ở ba vai khác nhau, và điều đáng ghi lạ
 **Tôi dán API key vào trong code.** Tôi viết:
 
 ```python
-api_key = os.getenv("GEMINI_API_KEY") or os.getenv("AQ.Ab8RN6Le...")
+api_key = os.getenv("GEMINI_API_KEY") or os.getenv("<API_KEY_CUA_TOI>")
 ```
 
 Tôi tưởng `os.getenv()` là chỗ để "nạp key vào". Thực ra nó nhận **tên biến môi trường**, không phải giá trị. Hậu quả kép: code không chạy được (Python đi tìm một biến tên là chính cái key, không có, trả `None`), và key bị nhúng thẳng vào file sắp push lên GitHub — đúng điều README cảnh báo ngay đầu tài liệu.

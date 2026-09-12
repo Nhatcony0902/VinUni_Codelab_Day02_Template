@@ -1,6 +1,6 @@
 # 01 — Problem Scan & Quick Cards
 
-**Học viên:** Phạm Long Nhất
+**Học viên:** B2-Phạm Long Nhật-nhatcony0902@gmail.com
 **Vai trò:** AI Product Engineer — Vin Smart Future (Vingroup)
 **Mảng tập trung:** Y tế & Giáo dục (Vinmec / VinUni)
 **Phase:** 1 (SCAN) + 2 (QUICK-ASSESS)
