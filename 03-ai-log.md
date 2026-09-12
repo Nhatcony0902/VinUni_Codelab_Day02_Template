@@ -1,5 +1,5 @@
 # Tên nhóm: B2
-# Họ và tên: Chu Thuỳ Dương
+# Họ và tên: Chu Thuỳ Dương - chuduong2504@gmail.com
 
 ---
 
