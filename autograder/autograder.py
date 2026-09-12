@@ -1,3 +1,6 @@
+# <!-- Nhóm: B2
+# Họ và Tên: Lục Tiến Đạt
+# Email: luctiendat910@gmail.com -->
 import os
 import sys
 import inspect

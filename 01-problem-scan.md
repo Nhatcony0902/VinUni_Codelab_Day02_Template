@@ -1,3 +1,6 @@
+<!-- Nhóm: B2
+Họ và Tên: Lục Tiến Đạt
+Email: luctiendat910@gmail.com -->
 # 🔍 01-problem-scan.md — Problem Scan & Quick Cards (Vin Smart Future)
 
 > **Dự án:** Vin Smart Future — AI Product Scoping Lab 02  

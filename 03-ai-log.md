@@ -1,3 +1,6 @@
+<!-- Nhóm: B2
+Họ và Tên: Lục Tiến Đạt
+Email: luctiendat910@gmail.com -->
 # 📝 03-ai-log.md — Nhật Ký Tương Tác & Phản Ánh Sử Dụng AI (Vin Smart Future)
 
 > **Tác giả:** Kỹ sư AI Product (Vin Smart Future)  

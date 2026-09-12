@@ -1,3 +1,6 @@
+<!-- Nhóm: B2
+Họ và Tên: Lục Tiến Đạt
+Email: luctiendat910@gmail.com -->
 # 🏗️ 02-deep-dive-report.md — Phân Tích Sâu Dự Án AI (Vin Smart Future)
 
 > **Dự án Lựa Chọn:** Xanh SM Intelligent Battery & Emergency Dispatcher Co-Pilot  
