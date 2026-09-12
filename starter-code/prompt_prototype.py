@@ -1,3 +1,10 @@
+# =============================================================================
+# Nhóm: B2
+# Thành viên:
+#   - Họ và tên : Tô Huy Thông
+#   - Email     : tohuythonghd0@gmail.com
+# =============================================================================
+
 """
 Day 2 — AI Product Scoping (Vin Smart Future)
 Lightweight Prompt Boundary Prototyping (Starter Code)

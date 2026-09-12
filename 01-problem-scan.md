@@ -1,3 +1,8 @@
+---
+**Nhóm:** B2 | **Họ và tên:** Tô Huy Thông | **Email:** tohuythonghd0@gmail.com
+
+---
+
 # 01 — Problem Scan & Quick Cards (Ý tưởng Cá nhân)
 
 > **Lab 02: AI Product Scoping — Vin Smart Future**

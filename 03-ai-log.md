@@ -1,3 +1,8 @@
+---
+**Nhóm:** B2 | **Họ và tên:** Tô Huy Thông | **Email:** tohuythonghd0@gmail.com
+
+---
+
 # 03 — AI Log & Reflection: Nhật ký Tương tác AI
 
 > **Lab 02: AI Product Scoping — Vin Smart Future**

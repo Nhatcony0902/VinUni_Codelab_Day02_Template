@@ -1,3 +1,8 @@
+---
+**Nhóm:** B2 | **Họ và tên:** Tô Huy Thông | **Email:** tohuythonghd0@gmail.com
+
+---
+
 # 02 — Deep Dive Report: AI Product Scoping (Vin Smart Future)
 
 > **Mảng kinh doanh lựa chọn: Vinmec — Tóm tắt hồ sơ bệnh án tự động bằng AI trước khám tái khám.**
